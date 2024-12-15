@@ -65,22 +65,22 @@
                                 if (creasesion.getAttribute("acceso") != null && creasesion.getAttribute("nivel") != null) {
                                     Vendedor = creasesion.getAttribute("acceso").toString();
                                     nivel = creasesion.getAttribute("nivel").toString();
-                                    out.print("<a href='login.jsp?cerrar=true'> Salir: " + Vendedor + " </a><br>");
+                                    out.print("<a href='loginRH.jsp?cerrar=true'> Salir: " + Vendedor + " </a><br>");
                                     out.print("Rol: Vendedor <br>");
 
                                 } else if (creasesion.getAttribute("administrador") != null && creasesion.getAttribute("nivel") != null) {
                                     Administrador = creasesion.getAttribute("administrador").toString();
                                     nivel2 = creasesion.getAttribute("nivel").toString();
-                                    out.print("<a href='login.jsp?cerrar=true'> Salir: " + Administrador + " </a><br>");
+                                    out.print("<a href='loginRH.jsp?cerrar=true'> Salir: " + Administrador + " </a><br>");
                                     out.print("Rol: Administrador <br>");
 
                                 } else {
-                                    out.print("<script>location.replace('login.jsp');</script>");
+                                    out.print("<script>location.replace('loginRH.jsp');</script>");
                                 }
                             %>
                         </h2>
                         <ol class="breadcrumb">
-                            <li><a href="index.jsp" style="color: blue">Inicio </a></li>
+                            <li><a href="indexRH.jsp" style="color: blue">Inicio </a></li>
                             <li class="active">Homeworking</li>
                         </ol>
                     </div>
@@ -95,7 +95,7 @@
                         <div class="mt-30"></div>
 
                         <div class="row">
-                            <form class="bordered centered" method="post" action="buscaEquipo.jsp">
+                            <form class="bordered centered" method="post" action="buscaEquipoRH.jsp">
                                 <tr>
                                     <td>
                                         <div class="input-field ">
@@ -116,7 +116,7 @@
                         <!-- Formulario para agregar un nuevo equipo -->
                         <h2 class="mt-4">Registrar Nuevo Equipo</h2>
 
-                        <form method="post" action="registrarEquipo.jsp" class="form-inline">
+                        <form method="post" action="registrarEquipoRH.jsp" class="form-inline">
                             <div class="form-group">
                                 <label for="marca" style="font-size: 17px;">Marca:</label>
                                 <input type="text" class="form-control ml-2" name="marca" id="marca" required>
@@ -155,12 +155,12 @@
                                     <td>$<%= listado.getDouble("precio")%></td>
                                     <td>
                                         <!-- Formulario para editar equipo -->
-                                        <form method="post" action="editarEquipo.jsp" style="display: inline-block;">
+                                        <form method="post" action="editarEquipoRH.jsp" style="display: inline-block;">
                                             <input type="hidden" name="idEquipo" value="<%= listado.getInt("idEquipo")%>">
                                             <button type="submit" class="btn btn-warning">Editar</button>
                                         </form>
                                         <!-- Formulario para eliminar equipo -->
-                                        <form method="post" action="eliminarEquipo.jsp" style="display: inline-block;">
+                                        <form method="post" action="eliminarEquipoRH.jsp" style="display: inline-block;">
                                             <input type="hidden" name="idEquipo" value="<%= listado.getInt("idEquipo")%>">
                                             <button type="submit" class="btn btn-danger">Eliminar</button>
                                         </form>

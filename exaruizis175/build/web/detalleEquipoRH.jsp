@@ -44,22 +44,22 @@
                                 if (creasesion.getAttribute("acceso") != null && creasesion.getAttribute("nivel") != null) {
                                     Vendedor = creasesion.getAttribute("acceso").toString();
                                     nivel = creasesion.getAttribute("nivel").toString();
-                                    out.print("<a href='login.jsp?cerrar=true'> Salir: " + Vendedor + " </a><br>");
+                                    out.print("<a href='loginRH.jsp?cerrar=true'> Salir: " + Vendedor + " </a><br>");
                                     out.print("Rol: Vendedor <br>");
 
                                 } else if (creasesion.getAttribute("administrador") != null && creasesion.getAttribute("nivel") != null) {
                                     Administrador = creasesion.getAttribute("administrador").toString();
                                     nivel2 = creasesion.getAttribute("nivel").toString();
-                                    out.print("<a href='login.jsp?cerrar=true'> Salir: " + Administrador + " </a><br>");
+                                    out.print("<a href='loginRH.jsp?cerrar=true'> Salir: " + Administrador + " </a><br>");
                                     out.print("Rol: Administrador <br>");
 
                                 } else {
-                                    out.print("<script>location.replace('login.jsp');</script>");
+                                    out.print("<script>location.replace('loginRH.jsp');</script>");
                                 }
                             %>
                         </h2>
                         <ol class="breadcrumb">
-                            <li><a href="index.jsp" style="color: blue">Inicio</a></li>
+                            <li><a href="indexRH.jsp" style="color: blue">Inicio</a></li>
                             <li class="active">Homework</li>
                         </ol>
                     </div>
@@ -99,7 +99,7 @@
                             </p>                     
                             <br>
                             <p class="center">
-                                <a href="index.jsp" class="btn waves-effect waves-light center">
+                                <a href="indexRH.jsp" class="btn waves-effect waves-light center">
                                     Aceptar
                                     <i class="material-icons">check_circle</i>
                                 </a>

@@ -57,17 +57,17 @@
                                 if (creasesion.getAttribute("acceso") != null && creasesion.getAttribute("nivel") != null) {
                                     Vendedor = creasesion.getAttribute("acceso").toString();
                                     nivel = creasesion.getAttribute("nivel").toString();
-                                    out.print("<a href='login.jsp?cerrar=true'> Salir: " + Vendedor + " </a><br>");
+                                    out.print("<a href='loginRH.jsp?cerrar=true'> Salir: " + Vendedor + " </a><br>");
                                     out.print("Rol: Vendedor <br>");
 
                                 } else if (creasesion.getAttribute("administrador") != null && creasesion.getAttribute("nivel") != null) {
                                     Administrador = creasesion.getAttribute("administrador").toString();
                                     nivel2 = creasesion.getAttribute("nivel").toString();
-                                    out.print("<a href='login.jsp?cerrar=true'> Salir: " + Administrador + " </a><br>");
+                                    out.print("<a href='loginRH.jsp?cerrar=true'> Salir: " + Administrador + " </a><br>");
                                     out.print("Rol: Administrador <br>");
 
                                 } else {
-                                    out.print("<script>location.replace('login.jsp');</script>");
+                                    out.print("<script>location.replace('loginRH.jsp');</script>");
                                 }
                             %>
                         </h2>
@@ -100,7 +100,7 @@
       
       if (coincidencias == 1) {
         listado2.next();
-        out.println("<script>document.location = \"detalleEquipo.jsp?idEquipo=" + listado2.getInt("idEquipo") + "\"</script>");
+        out.println("<script>document.location = \"detalleEquipoRH.jsp?idEquipo=" + listado2.getInt("idEquipo") + "\"</script>");
       }
 
       
@@ -117,7 +117,7 @@
                             %>
                         <tr>
                             <td><%=listado2.getString("marca")%></td>
-                        <form method="post" action="detalleEquipo.jsp">
+                        <form method="post" action="detalleEquipoRH.jsp">
                             <input type="hidden" name="idEquipo" value="<%=listado2.getString("idEquipo")%>">
                             <td>
                                 <button class="btn waves-effect waves-light center  light-blue darken-1" type="submit" name="editar">

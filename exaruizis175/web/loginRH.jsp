@@ -56,15 +56,15 @@
                     <div id="materialize-menu" class="menuzord">
 
          
-                        <a href="index.jsp" class="logo-brand">
+                        <a href="indexRH.jsp" class="logo-brand">
                             <img class="logo-dark" src="assets/images/logomaug-blue.png" alt=""/>
                             <img class="logo-light" src="" alt=""/>
                         </a>
                        
 
                         <ul class="menuzord-menu pull-right light">
-                             <li><a href=index.jsp>Inicio</a></li>                                                     
-                            <li><a href=index2.jsp>Homework</a></li>                                                     
+                             <li><a href=indexRH.jsp>Inicio</a></li>                                                     
+                            <li><a href=index2RH.jsp>Homework</a></li>                                                     
                         </ul>
                   
                     </div>
@@ -96,7 +96,7 @@
                     <div class="card-wrapper"></div>
                     <div class="card-wrapper">
                         <h1 class="title">Ingreso al Sistema</h1>
-                        <form   action="login.jsp" method="post">                            
+                        <form   action="loginRH.jsp" method="post">                            
                             <div class="input-container">
                                 <select name="user"  class="browser-default">
                                     <option name="rol" value="" disabled selected>Ingresar como</option>
@@ -152,7 +152,7 @@
                                     case 2:
                                         lacceso2.setAttribute("administrador", nombre);
                                         lacceso2.setAttribute("nivel", 2);
-                                        response.sendRedirect("index2.jsp");
+                                        response.sendRedirect("index2RH.jsp");
                                         break;
                                     default:
                                         out.println("<br><h5 class='center' style='color:#d22a3a;'>El usuario no existe o la contraseña es incorrecta!!!</h5>");

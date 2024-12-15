@@ -34,14 +34,14 @@
                     <div id="materialize-menu" class="menuzord">
 
 
-                        <a href="index.jsp" class="logo-brand">
+                        <a href="indexRH.jsp" class="logo-brand">
                             <img class="logo-dark" src="assets/images/logomaug-blue.png" alt=""/>
                             <img class="logo-light" src="assets/images/logomaug.png" alt=""/>
                         </a>
                         
                         <ul class="menuzord-menu pull-right light">
-                             <li><a href=index.jsp>Inicio</a></li>                                                     
-                            <li><a href=index2.jsp>Homeworking</a></li>                                                     
+                             <li><a href=indexRH.jsp>Inicio</a></li>                                                     
+                            <li><a href=index2RH.jsp>Homeworking</a></li>                                                     
                         </ul>
                        
                     </div>

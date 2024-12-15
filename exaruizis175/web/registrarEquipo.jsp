@@ -44,7 +44,7 @@
                 if (marca == null || modelo == null || precioStr == null || 
                     marca.trim().isEmpty() || modelo.trim().isEmpty() || precioStr.trim().isEmpty()) {
                     out.print("<script type=\"text/javascript\">alert('Todos los campos son obligatorios');</script>");
-                    out.print("<script>document.location = \"index.jsp\";</script>");
+                    out.print("<script>document.location = \"indexRH.jsp\";</script>");
                     return;
                 }
 
@@ -54,7 +54,7 @@
                     precio = Integer.parseInt(precioStr);
                 } catch (NumberFormatException e) {
                     out.print("<script type=\"text/javascript\">alert('El precio debe ser un número válido');</script>");
-                    out.print("<script>document.location = \"index.jsp\";</script>");
+                    out.print("<script>document.location = \"indexRH.jsp\";</script>");
                     return;
                 }
 
@@ -67,7 +67,7 @@
 
                 if (rs.next() && rs.getInt(1) > 0) {
                     out.print("<script type=\"text/javascript\">alert('Lo siento, el equipo ya existe');</script>");
-                    out.print("<script>document.location = \"index.jsp\";</script>");
+                    out.print("<script>document.location = \"indexRH.jsp\";</script>");
                 } else {
                    
                     String insercion = "INSERT INTO equipos (marca, modelo, precio) VALUES (?, ?, ?)";
@@ -81,17 +81,17 @@
                     
                     if (filasAfectadas > 0) {
                         out.print("<script type=\"text/javascript\">alert('Equipo añadido exitosamente');</script>");
-                        out.print("<script>document.location = \"index.jsp\";</script>");
+                        out.print("<script>document.location = \"indexRH.jsp\";</script>");
                     } else {
                         out.print("<script type=\"text/javascript\">alert('Error al añadir el equipo');</script>");
-                        out.print("<script>document.location = \"index.jsp\";</script>");
+                        out.print("<script>document.location = \"indexRH.jsp\";</script>");
                     }
                 }
             } catch (Exception e) {
                 
                 e.printStackTrace();
                 out.print("<script type=\"text/javascript\">alert('Error en la base de datos: " + e.getMessage() + "');</script>");
-                out.print("<script>document.location = \"index.jsp\";</script>");
+                out.print("<script>document.location = \"indexRH.jsp\";</script>");
             } finally {
                
                 try {
@@ -129,7 +129,7 @@
                                     out.print(": " + Administrador + " </a><br>");
                                     out.print("Rol: Administrador <br>");
                                 } else {
-                                    out.print("<script>location.replace('index2.jsp');</script>");
+                                    out.print("<script>location.replace('index2RH.jsp');</script>");
                                 }
                             %>
                         </h2>
