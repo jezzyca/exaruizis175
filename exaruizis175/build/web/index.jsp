@@ -1,7 +1,7 @@
 <%-- 
     Document   : index2
     Created on : 28-02-2018, 19:21:43
-    Author     : Mau
+    Author     : Yessi
 --%>
 
 <%@page import="java.sql.Statement"%>

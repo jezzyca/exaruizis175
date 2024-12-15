@@ -1,7 +1,7 @@
 <%-- 
     Document   : altaEquipo
-    Created on : [Current Date]
-    Author     : [Your Name]
+    Created on : 15/12/2024
+    Author     : Yessi
 --%>
 
 <%@page import="java.sql.PreparedStatement"%>
@@ -26,10 +26,10 @@
             ResultSet rs = null;
 
             try {
-                // Load the JDBC driver
+                
                 Class.forName("com.mysql.jdbc.Driver");
                 
-                // Establish database connection
+                
                 conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/bdexaruizis175", "root", "");
                 Statement s = conexion.createStatement();
                 
@@ -48,7 +48,7 @@
                     return;
                 }
 
-                // Parse precio to integer
+                
                 int precio;
                 try {
                     precio = Integer.parseInt(precioStr);
@@ -69,14 +69,14 @@
                     out.print("<script type=\"text/javascript\">alert('Lo siento, el equipo ya existe');</script>");
                     out.print("<script>document.location = \"index.jsp\";</script>");
                 } else {
-                    // Insert the new equipment
+                   
                     String insercion = "INSERT INTO equipos (marca, modelo, precio) VALUES (?, ?, ?)";
                     pstmtInsert = conexion.prepareStatement(insercion);
                     pstmtInsert.setString(1, marca);
                     pstmtInsert.setString(2, modelo);
                     pstmtInsert.setInt(3, precio);
                     
-                    // Execute the insert
+                  
                     int filasAfectadas = pstmtInsert.executeUpdate();
                     
                     if (filasAfectadas > 0) {
@@ -88,12 +88,12 @@
                     }
                 }
             } catch (Exception e) {
-                // Log the full error for debugging
+                
                 e.printStackTrace();
                 out.print("<script type=\"text/javascript\">alert('Error en la base de datos: " + e.getMessage() + "');</script>");
                 out.print("<script>document.location = \"index.jsp\";</script>");
             } finally {
-                // Close resources
+               
                 try {
                     if (rs != null) rs.close();
                     if (pstmtCheck != null) pstmtCheck.close();

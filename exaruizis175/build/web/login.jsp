@@ -47,7 +47,7 @@
     </head>
     <body>
           
-        <!--header start-->
+
         <header id="header" class="tt-nav transparent-header nav-border-bottom">
 
             <div class="header-sticky light-header">
@@ -55,19 +55,18 @@
                 <div class="container">                  
                     <div id="materialize-menu" class="menuzord">
 
-                        <!--logo start-->
+         
                         <a href="index.jsp" class="logo-brand">
                             <img class="logo-dark" src="assets/images/logomaug-blue.png" alt=""/>
                             <img class="logo-light" src="" alt=""/>
                         </a>
-                        <!--logo end-->
+                       
 
-                        <!-- menu start-->
                         <ul class="menuzord-menu pull-right light">
                              <li><a href=index.jsp>Inicio</a></li>                                                     
                             <li><a href=index2.jsp>Homework</a></li>                                                     
                         </ul>
-                        <!-- menu end-->
+                  
                     </div>
                 </div>
             </div>

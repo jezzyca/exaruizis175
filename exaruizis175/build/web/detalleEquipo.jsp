@@ -1,5 +1,5 @@
 <%-- 
-    Document   : detalleAlumno
+    Document   : detalleEquipo
     Created on : 28-02-2018, 23:17:43
     Author     : Yessi
 --%>
@@ -15,28 +15,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Detalle alumno</title>  
+        <title>Detalle Equipo</title>  
         <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,900' rel='stylesheet' type='text/css'>
-        <!-- Material Icons CSS -->
         <link href="assets/fonts/iconfont/material-icons.css" rel="stylesheet">
-        <!-- FontAwesome CSS -->
         <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <!-- magnific-popup -->
         <link href="assets/css/magnific-popup.css" rel="stylesheet">
-        <!-- flexslider -->
         <link href="assets/flexSlider/flexslider.css" rel="stylesheet">
-        <!-- materialize -->
         <link href="assets/materialize/css/materialize.min.css" rel="stylesheet">
-        <!-- Bootstrap -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <!-- shortcodes -->
         <link href="assets/css/shortcodes.css" rel="stylesheet">
         <link href="assets/css/page-tittle.css" rel="stylesheet">
-        <link href="assets/css/header.css" rel="stylesheet">
-
-        <!-- Main Style CSS -->
+        <link href="assets/css/header.css" rel="stylesheet"> 
         <link href="assets/css/style.css" rel="stylesheet">
-        <!-- Creative CSS -->
         <link href="assets/css/creative.css" rel="stylesheet">
     </head>
     <body>

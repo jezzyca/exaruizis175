@@ -1,5 +1,5 @@
 <%-- 
-    Document   : buscaAlumno
+    Document   : buscaEquipo
     Created on : 28-02-2018, 22:37:01
     Author     : Yessi
 --%>
